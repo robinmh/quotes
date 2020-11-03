@@ -8,10 +8,16 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    @State var name: String = ""
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
+        TextField("Please enter your name", text: $name)
     }
 }
 
